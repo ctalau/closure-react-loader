@@ -1,0 +1,27 @@
+{
+  "name": "jstd-closure-compiler",
+  "version": "1.0.0",
+  "description": "An example configuration for using Gulp, JsTestDriver and the Closure Compiler",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "cristitalau@gmail.com",
+  "license": "GPL",
+  "devDependencies": {
+    "buffer": "^3.2.2",
+    "del": "^1.2.0",
+    "gulp": "*",
+    "gulp-change": "^1.0.0",
+    "gulp-closure-compiler": "^0.2.19",
+    "gulp-closure-deps": "^0.4.0",
+    "gulp-debug": "^2.0.1",
+    "gulp-filelist": "^0.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.3",
+    "gulp-util": "^3.0.5",
+    "lazypipe": "^0.2.3",
+    "stream-combiner": "^0.2.2",
+    "through2": "^0.6.5"
+  }
+}

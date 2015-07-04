@@ -1,6 +1,7 @@
 Closure React Loader
 ====================
 
+[![build status](https://travis-ci.org/ctalau/closure-react-loader.svg)](https://travis-ci.org/ctalau/closure-react-loader)
 
 In development mode, Google Closure Library loads scripts dynamically 
 using the `goog.require` and `goog.provide` directives. However, if some

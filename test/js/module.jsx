@@ -8,8 +8,8 @@ goog.require('goog.dom.classlist');
     <h1>Hello, world!</h1>,
     ceva
   );
-  setTimeout(function() {
+  addClass = function() {
     goog.dom.classlist.add(ceva, 'ceva');
-  }, 0);
-  
+  }
 }())
+

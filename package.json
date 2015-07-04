@@ -5,8 +5,11 @@
   "main": "closure-react-loader",
   "author": "cristitalau@gmail.com",
   "license": "MIT",
-  "dependencies": {
-    "react": "~0.13.3"
+  "devDependencies": {
+    "closure-library": "^1.43629075.2",
+    "react": "^0.13.3",
+    "react-tools": "^0.13.3",
+    "tape": "~2.4.0"
   },
   "authors": [
     "Cristian Talau <cristitalau@gmail.com>"
@@ -15,6 +18,19 @@
     "closure",
     "react"
   ],
+  "testling": {
+    "html": "test/index.html",
+    "browsers": [
+      "ie/9..latest",
+      "chrome/20..latest",
+      "firefox/19..latest",
+      "safari/6.0..latest",
+      "opera/15.0..latest",
+      "iphone/6",
+      "ipad/6",
+      "android-browser/latest"
+    ]
+  },
   "homepage": "http://github.com/ctalau/closure-react-loader",
   "ignore": [
     "**/.*",

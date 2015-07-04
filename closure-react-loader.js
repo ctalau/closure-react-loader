@@ -9,14 +9,13 @@ CLOSURE_IMPORT_SCRIPT = function(src) {
           document.write('<script>' + script + '</script>');
           written = true;
         }
-      } else {
-        console.log('Error loading script "' + src + '": ' + xmlhttp.status); 
-      }
+      } 
     }
     xmlhttp.open("GET", src, false);
     xmlhttp.send();
   } else {
-    goog.writeScriptSrcNode_(src);
+    document.write(
+          '<script type="text/javascript" src="' + src + '"></' + 'script>');
     written = true;
   }
   return written;

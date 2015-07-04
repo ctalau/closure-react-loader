@@ -5,8 +5,15 @@
   "main": "closure-react-loader",
   "author": "cristitalau@gmail.com",
   "license": "MIT",
+  "scripts": {
+    "test": "./node_modules/.bin/karma start --single-run"
+  },
   "devDependencies": {
     "closure-library": "^1.43629075.2",
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.12.37",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-jasmine": "^0.3.6",
     "react": "^0.13.3",
     "react-tools": "^0.13.3",
     "tape": "~2.4.0"

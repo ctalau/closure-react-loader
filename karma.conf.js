@@ -11,7 +11,7 @@ module.exports = function(config) {
       { pattern: 'node_modules/react/dist/**/*', included: false}
     ],
 
-    reporters: ['progress'],
+    reporters: ['dots'],
 
     port: 9876,
 

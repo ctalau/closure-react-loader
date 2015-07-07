@@ -13,4 +13,5 @@ to perform JSX transformation on the fly.
 
 It is a development tool. Do not use it in production!
 
-[![browser support](https://ci.testling.com/ctalau/closure-react-loader.png)](http://ci.testling.com/ctalau/closure-react-loader)
+[![Sauce Test Status](https://saucelabs.com/browser-matrix/ctalau.svg)](https://saucelabs.com/u/ctalau)
+

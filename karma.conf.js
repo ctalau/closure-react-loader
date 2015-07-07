@@ -23,7 +23,7 @@ module.exports = function(config) {
     autoWatch: false,
 
     // start these browsers
-    browsers: ['Firefox', 'sl_chrome', 'sl_ios_safari', 'sl_ie_9'],
+    browsers: ['Firefox', 'sl_chrome', 'sl_ios_safari', 'sl_ie_11'],
     customLaunchers: {
       sl_chrome: {
         base: 'SauceLabs',
@@ -37,17 +37,17 @@ module.exports = function(config) {
         platform: 'OS X 10.9',
         version: '7.1'
       },
-      sl_ie_9: {
+      sl_ie_11: {
         base: 'SauceLabs',
         browserName: 'internet explorer',
-        platform: 'Windows 7',
-        version: '9'
+        platform: 'Windows 8.1',
+        version: '11'
       }
     },
-    captureTimeout: 120000,
+    captureTimeout: 240000,
     browserNoActivityTimeout: 120000,
     sauceLabs: {
-        testName: 'closure-react-loader Unit Tests'
+        testName: 'closure-react-loader unit tests'
     },
     
     // Continuous Integration mode

@@ -14,6 +14,7 @@
     "karma": "^0.12.37",
     "karma-firefox-launcher": "^0.1.6",
     "karma-jasmine": "^0.3.6",
+    "karma-sauce-launcher": "^0.2.14",
     "react": "^0.13.3",
     "react-tools": "^0.13.3",
     "tape": "~2.4.0"

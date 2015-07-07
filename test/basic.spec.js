@@ -1,3 +1,4 @@
+jasmine.DEFAULT_TIMEOUT_INTERVAL = 60000;
 describe('closure-react-loader', function() {
   it('transforms JSX files on the fly', function(done) {
     var iframe = document.createElement('iframe');

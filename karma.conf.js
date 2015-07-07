@@ -45,6 +45,7 @@ module.exports = function(config) {
       }
     },
     captureTimeout: 120000,
+    browserNoActivityTimeout: 120000,
     sauceLabs: {
         testName: 'closure-react-loader Unit Tests'
     },

@@ -23,7 +23,7 @@ module.exports = function(config) {
     autoWatch: false,
 
     // start these browsers
-    browsers: ['Firefox', 'sl_chrome', 'sl_ios_safari', 'sl_ie_11'],
+    browsers: ['Firefox', 'sl_chrome', 'sl_ios_safari', 'sl_ie_9'],
     customLaunchers: {
       sl_chrome: {
         base: 'SauceLabs',
@@ -37,11 +37,11 @@ module.exports = function(config) {
         platform: 'OS X 10.9',
         version: '7.1'
       },
-      sl_ie_11: {
+      sl_ie_9: {
         base: 'SauceLabs',
         browserName: 'internet explorer',
-        platform: 'Windows 8.1',
-        version: '11'
+        platform: 'Windows 7',
+        version: '9'
       }
     },
     captureTimeout: 120000,

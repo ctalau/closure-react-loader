@@ -1,10 +1,12 @@
+/*eslint-env browser */
+/*globals CLOSURE_IMPORT_SCRIPT:true JSXTransformer*/
 CLOSURE_IMPORT_SCRIPT = function(src) {
   var written = false;
   if (src.match(/.jsx$/)) {
-    var xmlhttp = new XMLHttpRequest(), result = false;
+    var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
-      if (xmlhttp.readyState == XMLHttpRequest.DONE) {
-        if (xmlhttp.status == 200) {
+      if (xmlhttp.readyState === XMLHttpRequest.DONE) {
+        if (xmlhttp.status === 200) {
           var content = xmlhttp.responseText;
           var transformResult = JSXTransformer.transform(content, {sourceMap: true});
           var script = transformResult.code;
@@ -22,10 +24,8 @@ CLOSURE_IMPORT_SCRIPT = function(src) {
           }
           written = true;
         }
-      } else {
-        console.log('Error loading script "' + src + '": ' + xmlhttp.status);
       }
-    }
+    };
     xmlhttp.open("GET", src, false);
     xmlhttp.send();
   } else {
